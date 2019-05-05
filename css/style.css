@@ -1,0 +1,189 @@
+body {
+    margin:5px;
+    background : #eee;
+}
+
+.mui-container {
+    background: white;
+}
+#gogyoTable td {
+    text-align: center;
+}
+
+/* 木 */
+td[data-row="0"] {
+    background:rgb(255, 243, 204);;
+    color:black;
+}
+/* 火 */
+td[data-row="1"]{
+    background:rgb(255, 200, 200);
+    color:black;
+}
+/* 土 */
+td[data-row="2"]{
+    background:#ccc;
+    color:black;
+}
+/* 金 */
+td[data-row="3"]{
+    background:rgb(251, 255, 212);
+    color:black;
+}
+/* 水 */
+td[data-row="4"]{
+    background:rgb(214, 230, 255);
+    color:black;
+}
+
+#gogyoTableBody > tr:nth-child(1) > td:nth-child(1), #gogyoTableBody > tr:nth-child(8) > td:nth-child(1) {
+    background:#bbb;
+    font-weight: bold;
+}
+
+.five-label {
+    background-color:#eee;
+    font-weight: bold;
+    border-right: solid 2px black;
+}
+
+#gogyoTable th:nth-last-child(1),
+#gogyoTable th:nth-last-child(2),
+#gogyoTable th:nth-last-child(3),
+#gogyoTable th:nth-last-child(4),
+#gogyoTable th:nth-last-child(5) {
+    width:15%;
+    text-align: center !important;
+    background:#bbb;
+    font-weight: bold;
+    border-bottom: solid 2px black !important;
+}
+
+#gogyoTableHead > tr > th:nth-child(1) {
+    background:#bbb;
+    font-weight: bold;
+}
+
+.cell:hover {
+    cursor: pointer;
+    background:#aaaaff;
+    color:white;
+    transition:background 0.1s ease-in,color 0.1s ease-in;
+}
+
+.modal {    
+    width: 90%;
+    max-width: 750px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    height: 90%;
+    max-height: 300px;
+    background: white;
+    border:solid #ccc 1px;
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#tableView {
+    width:100%;
+    margin-top:5%;
+    max-width: 500px;
+    text-align: center;
+    display: inline-block;
+}
+
+#tableView > table {
+    width:100%;
+    font-size:3vh;
+    border-spacing: 0px;
+}
+
+#modalInput {
+    border:solid 2px;
+}
+
+#modalLabel {
+    width:40%;
+    text-align: right;
+    border:solid 1px;
+    background-color:#eee;
+}
+
+#modalTh {
+    width:60%;
+    border:solid 1px;
+    background-color:#ccc;
+}
+
+#modalForm {
+    position: absolute;
+    bottom:5px;
+    width:100%;
+}
+#modalOK {
+    padding-left:30px;
+    padding-right:30px;
+    font-size:28px;
+}
+
+#modalCancel{
+    font-size:12px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#modalCatWrap {
+    height: 100%;
+    display: inline;
+}
+
+#modalBlank {
+}
+
+.hidden {
+    display: none;
+}
+
+.incorrect {
+    animation: hurueru .1s  infinite;
+}
+
+.animeview-off {
+    max-height:0;
+    height:100%;
+}
+.animeview-on {
+    max-height:100vh;
+}
+
+#modalCat {
+    height:100%;
+    overflow: hidden;
+    transition: all 0.8s ease;
+}
+
+#modalCat img {
+    height:calc(80% - 32px);
+    margin-top:3px;
+}
+
+.clear-message {
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+    line-height: 30px;
+}
+
+@keyframes hurueru {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+
